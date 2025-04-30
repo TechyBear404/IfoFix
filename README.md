@@ -53,10 +53,11 @@ The main goal of this application is to track the interventions carried out by s
 
 5. Configure your `.env` file with your **database** and **Admin Login** settings.
 
-6. Generate the Laravel application key:
+6. Generate the Laravel application key and the symbolic link:
 
     ```bash
     php artisan key:generate
+    php artisan storage:link
     ```
 
 7. Run the migrations to set up the database tables:
@@ -86,4 +87,9 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## Previews
 
-Comming soon
+ <p>Tickets listing with create ticket modal deployed :</p>
+ <img src="https://github.com/TechyBear404/evaluations_cours/blob/main/public/images/screenshot/tickets_view_with_create_modal.png?raw=true" alt="tickets listing" width="300" />
+<p>Ticket : </p>
+<img src="https://github.com/TechyBear404/evaluations_cours/blob/main/public/images/screenshot/ticket_view.png?raw=true" alt="ticket's view" width="300" />
+<p>Intervention :</p>
+<img src="https://github.com/TechyBear404/evaluations_cours/blob/main/public/images/screenshot/intervention_view.png?raw=true" alt="intervention's view" width="300" />
