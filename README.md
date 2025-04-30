@@ -88,8 +88,8 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ## Previews
 
  <p>Tickets listing with create ticket modal deployed :</p>
- <img src="https://github.com/TechyBear404/evaluations_cours/blob/main/public/images/screenshot/tickets_view_with_create_modal.png?raw=true" alt="tickets listing" width="300" />
+ <img src="https://github.com/TechyBear404/IfoFix/blob/main/public/images/screenshot/tickets_view_with_create_modal.png?raw=true" alt="tickets listing" width="300" />
 <p>Ticket : </p>
-<img src="https://github.com/TechyBear404/evaluations_cours/blob/main/public/images/screenshot/ticket_view.png?raw=true" alt="ticket's view" width="300" />
+<img src="https://github.com/TechyBear404/IfoFix/blob/main/public/images/screenshot/ticket_view.png?raw=true" alt="ticket's view" width="300" />
 <p>Intervention :</p>
-<img src="https://github.com/TechyBear404/evaluations_cours/blob/main/public/images/screenshot/intervention_view.png?raw=true" alt="intervention's view" width="300" />
+<img src="https://github.com/TechyBear404/IfoFix/blob/main/public/images/screenshot/intervention_view.png?raw=true" alt="intervention's view" width="300" />
