@@ -123,7 +123,7 @@
                 <div>
                     <Label for="images">Images</Label>
                     <div
-                        class="mt-2"
+                        class="mt-2 mb-4"
                         @dragenter.prevent="handleDragEnter"
                         @dragleave.prevent="handleDragLeave"
                         @dragover.prevent

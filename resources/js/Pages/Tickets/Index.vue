@@ -8,7 +8,8 @@
                 :devices="props.devices"
                 :brands="props.brands"
                 :types="props.types"
-                class="w-full transition-all duration-300 ease-in-out"
+                class="flex-1 min-w-0 transition-all duration-300 ease-in-out"
+                :class="showCreateForm ? 'hidden lg:block' : ''"
                 @updateDeliveredTickets="deliveredTickets = $event"
                 @updatePendingTickets="pendingTickets = $event"
                 @button-click="buttonClick"
@@ -24,7 +25,7 @@
                 class="transition-all duration-300 ease-in-out"
                 :class="
                     showCreateForm
-                        ? 'translate-x-0 w-full lg:w-96'
+                        ? 'translate-x-0 w-full lg:w-80 xl:w-96'
                         : 'translate-x-full opacity-0 w-0'
                 "
             />

@@ -56,8 +56,6 @@ const props = defineProps({
     deliveredTickets: Boolean,
 });
 
-console.log(props.tickets);
-
 const tickets = ref(props.tickets);
 
 watchEffect(() => {
@@ -522,9 +520,9 @@ const resetFilters = () => {
                         </DropdownMenuContent>
                     </DropdownMenu>
                 </div>
-                <div class="flex gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4">
                     <Select v-if="isClientVisible" v-model="selectedClient">
-                        <SelectTrigger class="max-w-48">
+                        <SelectTrigger class="max-w-48 flex-1">
                             <SelectValue placeholder="Client" />
                         </SelectTrigger>
                         <SelectContent>
@@ -547,7 +545,7 @@ const resetFilters = () => {
                         v-if="isTechnicianVisible"
                         v-model="selectedTechnician"
                     >
-                        <SelectTrigger class="max-w-48">
+                        <SelectTrigger class="max-w-48 flex-1">
                             <SelectValue placeholder="Technicien" />
                         </SelectTrigger>
                         <SelectContent>
@@ -567,7 +565,7 @@ const resetFilters = () => {
                     </Select>
 
                     <Select v-if="isDeviceVisible" v-model="selectedDevice">
-                        <SelectTrigger class="max-w-48">
+                        <SelectTrigger class="max-w-48 flex-1">
                             <SelectValue placeholder="Model" />
                         </SelectTrigger>
                         <SelectContent>
@@ -587,7 +585,7 @@ const resetFilters = () => {
                     </Select>
 
                     <Select v-if="isBrandVisible" v-model="selectedBrand">
-                        <SelectTrigger class="max-w-48">
+                        <SelectTrigger class="max-w-48 flex-1">
                             <SelectValue placeholder="Marque" />
                         </SelectTrigger>
                         <SelectContent>
@@ -607,7 +605,7 @@ const resetFilters = () => {
                     </Select>
 
                     <Select v-if="isTypeVisible" v-model="selectedType">
-                        <SelectTrigger class="max-w-48">
+                        <SelectTrigger class="max-w-48 flex-1">
                             <SelectValue placeholder="Type" />
                         </SelectTrigger>
                         <SelectContent>
