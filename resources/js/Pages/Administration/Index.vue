@@ -1,7 +1,6 @@
 <template>
-    <AppLayout title="Administration">
+    <AppLayout>
         <div class="container h-screen max-h-screen p-4 mx-auto">
-            <Head title="Administration" />
             <Tabs :default-value="activeTab" class="">
                 <TabsList
                     class="grid justify-start w-full grid-cols-1 p-2 text-white rounded-md bg-gradient-to-b from-indigo-500 via-indigo-600 to-indigo-600 sm:grid-cols-2 md:flex md:flex-row"

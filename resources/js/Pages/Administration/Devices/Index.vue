@@ -1,5 +1,8 @@
 <template>
     <AppLayout>
+        <Head>
+            <title>Administration / Appareils</title>
+        </Head>
         <div class="flex h-full">
             <!-- Main content -->
             <div class="flex-1 p-4">
@@ -179,7 +182,7 @@ import { ref, computed } from "vue";
 import { Card, CardHeader } from "@/Components/ui/card";
 import CardContent from "@/Components/ui/card/CardContent.vue";
 import EditDialog from "@/Components/EditDialog.vue";
-import { router } from "@inertiajs/vue3";
+import { Head, router } from "@inertiajs/vue3";
 
 const props = defineProps({
     types: {

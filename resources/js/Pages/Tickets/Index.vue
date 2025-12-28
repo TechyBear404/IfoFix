@@ -1,5 +1,8 @@
 <template>
     <AppLayout>
+        <Head>
+            <title>Tickets</title>
+        </Head>
         <div class="flex m-4 grow" :class="showCreateForm ? 'gap-4' : ''">
             <DataTable
                 :tickets="props.tickets"
@@ -38,6 +41,7 @@ import AppLayout from "@/Layouts/AppLayout.vue";
 import { ref } from "vue";
 import DataTable from "./DataTable.vue";
 import CreateTicket from "./CreateTicket.vue";
+import { Head } from "@inertiajs/vue3";
 
 const props = defineProps({
     tickets: Array,

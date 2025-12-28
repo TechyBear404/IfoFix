@@ -1,5 +1,8 @@
 <template>
-    <AppLayout title="Administration/Clients">
+    <AppLayout>
+        <Head>
+            <title>Administration / Clients</title>
+        </Head>
         <div class="flex m-4 grow" :class="selectedClient ? 'gap-4' : ''">
             <ClientsList
                 :clients="clientsList"
@@ -24,6 +27,7 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import ClientsList from "@/Pages/Administration/Clients/Partials/List.vue";
 import ClientProfile from "@/Pages/Administration/Clients/Partials/Show.vue";
+import { Head } from "@inertiajs/vue3";
 import { ref, watch } from "vue";
 
 const { clients } = defineProps({

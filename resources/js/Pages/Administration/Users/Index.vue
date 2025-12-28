@@ -1,5 +1,8 @@
 <template>
-    <AppLayout title="Administration/Users">
+    <AppLayout>
+        <Head>
+            <title>Administration / Techniciens</title>
+        </Head>
         <div class="flex m-4 grow" :class="selectedUser ? 'gap-4' : ''">
             <UsersList
                 :users="usersList"
@@ -24,6 +27,7 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import UsersList from "@/Pages/Administration/Users/Partials/List.vue";
 import UserProfile from "@/Pages/Administration/Users/Partials/Show.vue";
+import { Head } from "@inertiajs/vue3";
 import { ref, watch } from "vue";
 
 const { users } = defineProps({
